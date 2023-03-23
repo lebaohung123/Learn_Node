@@ -5,7 +5,7 @@ class SiteController {
   index(req, res, next) {
     Course.find({})
       .then((courses) => {
-        courses = courses.map((course) => course.toObject());
+        courses = mutipleMongooseToObject(courses);
         // courses: mutipleMongooseToObject(courses),
         res.render("home", { courses });
       })

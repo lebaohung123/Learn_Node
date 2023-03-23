@@ -1,15 +1,11 @@
 <div class="m-4">
   <div class="row">
     {{#each courses}}
-      <div class="col-sm-6 col-lg-4">
+      <div class="col-lg-3 col-lg-4 my-2">
         <div class="card">
           <a href="/courses/{{this.slug}}">
           <div class="img">
-            <img
-              class="card-img-top h-5"
-              src={{this.image}}
-              alt="Card image cap">
-            </img>
+            <img class="card-img-top h-5" src={{this.image}} alt="Card image cap"/>
           </a>
           </div>
           <div class="card-body">
